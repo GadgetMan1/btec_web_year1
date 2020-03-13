@@ -1,0 +1,32 @@
+<html>
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: 0.2fr 2.6fr 0.2fr;
+			grid-template-rows: 0.1fr 1.9fr 0.1fr;
+			grid-template-areas: "header header header" "sidebar main main" "sidebar main main";
+		}
+		.main { grid-area: main; }
+		.sidebar { grid-area: sidebar; }
+		.header { grid-area: header; }
+	</style>
+
+	<head>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<div class="main">
+				<p> Main Box </p>
+			</div>
+
+			<div class="sidebar">
+				<p> Sidebar Box </p>
+			</div>
+			
+			<div class="header">
+				<p> Header Box </p>
+			</div>
+		</div>		
+	</body>
+</html>
